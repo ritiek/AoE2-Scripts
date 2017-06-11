@@ -18,7 +18,7 @@ Check out this [youtube video](http://www.youtube.com/watch?v=F-MIimH9Kz8&t=0m24
 
 - Download the binary or compile it yourself.
 - Run `convert_monk.exe` and feed the key you would like to use as a macro.
-- Run AoE2 and select some units, place your mouse pointer on the first unit and press `F10` key, so the script knows where click at when deselecting a monk.
+- Run AoE2 and select some units, place your mouse pointer on the first unit and press `F10` key, so the script knows where to click at when deselecting a monk.
 http://i.imgur.com/rsf0q6N.jpg
 - You're done.
 - Edit the created `convert_monk.ini` to change your macro key or coordinates.

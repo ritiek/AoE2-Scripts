@@ -16,12 +16,34 @@ Automatically deselect a monk from a group of monks for easy multi conversions.
 
 Check out this [youtube video](http://www.youtube.com/watch?v=F-MIimH9Kz8&t=0m24s) for more details.
 
-- Download the binary or compile it yourself.
 - Run `convert_monk.exe` and feed the key you would like to use as a macro.
-- Run AoE2 and select some units, place your mouse pointer on the first unit and press `F10` key, so the script knows where to click at when deselecting a monk.
+- Run AoE2 and select some units, place your mouse pointer on the first unit and press <kbd>F10</kbd> key, so the script knows where to click at when deselecting a monk.
 http://i.imgur.com/rsf0q6N.jpg
 - You're done.
 - Edit the created `convert_monk.ini` to change your macro key or coordinates.
+
+### [CBA_macros.au3](CBA_macros.au3)
+
+- An easy way to queue army on all buildings of one type. Press <kbd>F8</kbd> and <kbd>F11</kbd> to enable or disable hotkeys.
+
+<kbd>Ctrl</kbd>+<kbd>a</kbd> - Arbalest
+
+<kbd>Ctrl</kbd>+<kbd>e</kbd> - Halberdier
+
+<kbd>Ctrl</kbd>+<kbd>v</kbd> - Paladin
+
+<kbd>Ctrl</kbd>+<kbd>g</kbd> - Eagle Warrior
+
+<kbd>Ctrl</kbd>+<kbd>r</kbd> - Skirmisher
+
+<kbd>Ctrl</kbd>+<kbd>c</kbd> - Camel
+
+<kbd>Ctrl</kbd>+<kbd>b</kbd> - Huskarl
+
+<kbd>Ctrl</kbd>+<kbd>f</kbd> - Hand Cannoneer
+
+<kbd>Ctrl</kbd>+<kbd>x</kbd> - Cavarly Archer
+
 
 ## Disclaimer
 

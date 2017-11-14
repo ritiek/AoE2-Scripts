@@ -1,5 +1,18 @@
 HotKeySet("{home}", "KillKey")
-HotKeySet("{F5}", "List")
+HotKeySet("{F11}", "Pause")
+HotKeySet("{F8}", "List")
+
+Func Pause()
+   HotKeySet("^a")
+   HotKeySet("^e")
+   HotKeySet("^v")
+   HotKeySet("^g")
+   HotKeySet("^r")
+   HotKeySet("^c")
+   HotKeySet("^b")
+   HotKeySet("^f")
+   HotKeySet("^x")
+EndFunc
 
 Func List()
    HotKeySet("^a", "arbalest")
@@ -177,5 +190,4 @@ Func cavarch()
    EndIf
 EndFunc
 
-List()
 Looper()

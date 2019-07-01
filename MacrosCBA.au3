@@ -1,6 +1,7 @@
 HotKeySet("{home}", "KillKey")
 HotKeySet("{F11}", "Pause")
-HotKeySet("{F8}", "List")
+HotKeySet("{F8}", "AssignHotkeys")
+
 
 Func Pause()
    HotKeySet("^a")
@@ -14,47 +15,52 @@ Func Pause()
    HotKeySet("^x")
 EndFunc
 
-Func List()
-   HotKeySet("^a", "arbalest")
-   HotKeySet("^e", "halberdier")
-   HotKeySet("^v", "paladin")
-   HotKeySet("^g", "eagle")
-   HotKeySet("^r", "skirmisher")
-   HotKeySet("^c", "camel")
-   HotKeySet("^b", "huskarl")
-   HotKeySet("^f", "handcannon")
-   HotKeySet("^x", "cavarch")
+
+Func AssignHotkeys()
+   HotKeySet("^a", "Arbalest")
+   HotKeySet("^e", "Halberdier")
+   HotKeySet("^v", "Paladin")
+   HotKeySet("^g", "Eagle")
+   HotKeySet("^r", "Skirmisher")
+   HotKeySet("^c", "Camel")
+   HotKeySet("^b", "Huskarl")
+   HotKeySet("^f", "HandCannon")
+   HotKeySet("^x", "CavArch")
 EndFunc
+
 
 Func KillKey()
    ProcessClose("age2_x1.exe")
    ProcessClose("age2_x2.exe")
 EndFunc
 
-Func Looper()
-   List()
+
+Func EndlessSleep()
+   AssignHotkeys()
    While 1
 	  Sleep(10)
    WEnd
 EndFunc
 
-Func arbalest()
+
+Func Arbalest()
    If ProcessExists('age2_x1.exe') Then
 	  HotKeySet("^a")
 	  Send("w")
 	  Send("{shiftdown}")
 	  Send("a")
 	  Send("{shiftup}")
-	  HotKeySet("^a", "arbalest")
-	  Looper()
+	  HotKeySet("^a", "Arbalest")
+	  EndlessSleep()
    Else
 	  HotKeySet("^a")
 	  Send("^a")
-	  HotKeySet("^a", "arbalest")
+	  HotKeySet("^a", "Arbalest")
    EndIf
 EndFunc
 
-Func halberdier()
+
+Func Halberdier()
    If ProcessExists('age2_x1.exe') Then
 	  HotKeySet("^e")
 	  Send("s")
@@ -62,16 +68,17 @@ Func halberdier()
 	  ;Send("+e")
 	  Send("e")
 	  Send("{shiftup}")
-	  HotKeySet("^e", "halberdier")
-	  Looper()
+	  HotKeySet("^e", "Halberdier")
+	  EndlessSleep()
    Else
 	  HotKeySet("^e")
 	  Send("^e")
-	  HotKeySet("^e", "halberdier")
+	  HotKeySet("^e", "Halberdier")
    EndIf
 EndFunc
 
-Func paladin()
+
+Func Paladin()
    If ProcessExists('age2_x1.exe') Then
 	  HotKeySet("^v")
 	  Send("x")
@@ -79,16 +86,17 @@ Func paladin()
 	  ;Send("+v")
 	  Send("v")
 	  Send("{shiftup}")
-	  HotKeySet("^v", "paladin")
-	  Looper()
+	  HotKeySet("^v", "Paladin")
+	  EndlessSleep()
    Else
 	  HotKeySet("^v")
 	  Send("^v")
-	  HotKeySet("^v", "paladin")
+	  HotKeySet("^v", "Paladin")
    EndIf
 EndFunc
 
-Func eagle()
+
+Func Eagle()
    If ProcessExists('age2_x1.exe') Then
 	  HotKeySet("^g")
 	  Send("s")
@@ -96,16 +104,17 @@ Func eagle()
 	  ;Send("+g")
 	  Send("g")
 	  Send("{shiftup}")
-	  HotKeySet("^g", "eagle")
-	  Looper()
+	  HotKeySet("^g", "Eagle")
+	  EndlessSleep()
    Else
 	  HotKeySet("^g")
 	  Send("^g")
-	  HotKeySet("^g", "eagle")
+	  HotKeySet("^g", "Eagle")
    EndIf
 EndFunc
 
-Func skirmisher()
+
+Func Skirmisher()
    If ProcessExists('age2_x1.exe') Then
 	  HotKeySet("^r")
 	  Send("w")
@@ -113,16 +122,17 @@ Func skirmisher()
 	  ;Send("+r")
 	  Send("r")
 	  Send("{shiftup}")
-	  HotKeySet("^r", "skirmisher")
-	  Looper()
+	  HotKeySet("^r", "Skirmisher")
+	  EndlessSleep()
    Else
 	  HotKeySet("^r")
 	  Send("^r")
-	  HotKeySet("^r", "skirmisher")
+	  HotKeySet("^r", "Skirmisher")
    EndIf
 EndFunc
 
-Func camel()
+
+Func Camel()
    If ProcessExists('age2_x1.exe') Then
 	  HotKeySet("^c")
 	  Send("x")
@@ -130,16 +140,17 @@ Func camel()
 	  ;Send("+c")
 	  Send("c")
 	  Send("{shiftup}")
-	  HotKeySet("^c", "camel")
-	  Looper()
+	  HotKeySet("^c", "Camel")
+	  EndlessSleep()
    Else
 	  HotKeySet("^c")
 	  Send("^c")
-	  HotKeySet("^c", "camel")
+	  HotKeySet("^c", "Camel")
    EndIf
 EndFunc
 
-Func huskarl()
+
+Func Huskarl()
    If ProcessExists('age2_x1.exe') Then
 	  HotKeySet("^b")
 	  Send("s")
@@ -147,16 +158,17 @@ Func huskarl()
 	  ;Send("+r")
 	  Send("r")
 	  Send("{shiftup}")
-	  HotKeySet("^b", "huskarl")
-	  Looper()
+	  HotKeySet("^b", "Huskarl")
+	  EndlessSleep()
    Else
 	  HotKeySet("^b")
 	  Send("^b")
-	  HotKeySet("^b", "huskarl")
+	  HotKeySet("^b", "Huskarl")
    EndIf
 EndFunc
 
-Func handcannon()
+
+Func HandCannon()
    If ProcessExists('age2_x1.exe') Then
 	  HotKeySet("^f")
 	  Send("w")
@@ -164,16 +176,17 @@ Func handcannon()
 	  ;Send("+e")
 	  Send("e")
 	  Send("{shiftup}")
-	  HotKeySet("^f", "handcannon")
-	  Looper()
+	  HotKeySet("^f", "HandCannon")
+	  EndlessSleep()
    Else
 	  HotKeySet("^f")
 	  Send("^f")
-	  HotKeySet("^f", "handcannon"
+	  HotKeySet("^f", "HandCannon"
    EndIf
 EndFunc
 
-Func cavarch()
+
+Func CavArch()
    If ProcessExists('age2_x1.exe') Then
 	  HotKeySet("^x")
 	  Send("w")
@@ -181,13 +194,14 @@ Func cavarch()
 	  ;Send("+c")
 	  Send("c")
 	  Send("{shiftup}")
-	  HotKeySet("^x", "cavarch")
-	  Looper()
+	  HotKeySet("^x", "CavArch")
+	  EndlessSleep()
    Else
 	  HotKeySet("^x")
 	  Send("^x")
-	  HotKeySet("^x", "cavarch")
+	  HotKeySet("^x", "CavArch")
    EndIf
 EndFunc
 
-Looper()
+
+EndlessSleep()

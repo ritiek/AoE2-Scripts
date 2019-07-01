@@ -10,20 +10,20 @@ Collection of Age of Empires 2 scripts and macros.
 
 ## What do they do?
 
-### [convert_monk.au3](convert_monk.au3)
+### [ConvertMonk.au3](ConvertMonk.au3)
 
 Automatically deselect a monk from a group of monks for easy multi conversions.
 
 Check out this [youtube video](http://www.youtube.com/watch?v=F-MIimH9Kz8&t=0m24s) for more details.
 
-- Run `convert_monk.exe` and feed the key you would like to use as a macro.
+- Run `ConvertMonk.exe` and feed the key you would like to use as a macro.
 - Run AoE2 and select some units, place your mouse pointer on the first unit and press <kbd>F10</kbd> key, so the script knows where to click at when deselecting a monk.
 <img src="http://i.imgur.com/rsf0q6N.jpg" width="290">
 
 - You're done.
-- Edit the created `convert_monk.ini` to change your macro key or coordinates.
+- Edit the created `ConvertMonk.ini` to change your macro key or coordinates.
 
-### [CBA_macros.au3](CBA_macros.au3)
+### [MacrosCBA.au3](MacrosCBA.au3)
 
 - An easy way to queue army on all buildings of one type. Press <kbd>F8</kbd> and <kbd>F11</kbd> to enable or disable hotkeys.
 
